@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>车源通&nbsp;车好卖&nbsp;买好车&nbsp;就上车源通</title>
+		<link rel="shortcut icon" href="title-icon.ico"/>
+		<link rel="stylesheet" type="text/css" href="css/public.css"/>
+		<link rel="stylesheet" type="text/css" href="css/product.css"/>
+	</head>
+	<body onmousewheel="mouseScroll(event)">
+		<!--顶部导航-->
+		<div class="header">
+			<h1 class="logo">车源通</h1>
+			<ul>
+				<li class="navClick"><a class="aChaClr" href="index.html">首页</a></li>
+				<li class="navClick"><a class="aChaClr" href="product.html">产品动态</a></li>
+				<li class="navClick"><a class="aChaClr" href="about.html">关于我们</a></li>
+				<li class="navClick"><a class="aChaClr" href="welcome.html">人才招聘</a></li>
+				<li class="navClick"><a class="aChaClr" href="relation.html">联系我们</a></li>
+			</ul>
+		</div>
+		<!--顶部导航 end-->
+				
+		<!--start大背景图-->
+		<div class="banner">
+			
+		</div>
+		<!--end大背景图-->
+		
+		<!--start时间线-->
+		<div class="timeLine">
+			<div>
+				<h3>2015-10-20</h3>
+				<h5>车源通3.0 上线！</h5>
+				<p>车源通3.0 版本支持线上预付订金，线下专员陪同看车、购车，提供全程一对一专属购车服务，提供购车建议，为您答疑解惑，免费提供选车、验车服务，让您买到放心底价车，这是车源通的服务宗旨，也是我们的承诺。</p>
+			</div>
+			<div>
+				<h3>2015-08-20</h3>
+				<h5>车源通2.0 上线！</h5>
+				<p>车源通2.0 版本会员权益上线，商家会员可以通过登录、报价等多种方式免费获得“通宝”，所得的“通宝”积累到一定的程度可以兑换平台定期推出的兑换物品，同时累计的“通宝”也可以抵用部分车款现金，会员享有平台专享特价车权益！</p>
+			</div>
+			<div>
+				<h3>2015-05-01</h3>
+				<h5>车源通1.0 横空出世！</h5>
+				<p>车源通1.0 版本横空出世，用户可以在平台上发布各种车型的求购信息、商家可以发布自己的车源信息，不仅解决用户买不到放心低价车的问题，同时为商家提供了新型渠道售车，做到“车好卖，买好车” 宗旨。</p>
+			</div>	
+			<i class="line"></i>
+		</div>
+		
+		<!--end时间线-->
+		
+		<!--start底部-->
+		<div class="footer">
+			<section>
+				<div class="footerL">
+					<ul>
+						<li><a href="index.html">首页</a></li>
+						<li><a href="about.html">关于我们</a></li>
+						<li><a href="product.html">产品动态</a></li>
+						<li><a href="welcome.html">人才招聘</a></li>
+						<li><a href="relation.html">联系我们</a></li>
+						
+					</ul>
+					<p>Copyright &copy; 2014～ 2017 青岛哈里森网络科技有限公司 版权所有  鲁 ICP备  14036831 号 -1</p>
+				</div>
+				<div class="footerC">
+					<img src="img/icon/icon_code.png"/>
+					<p>扫一扫关注我们</p>
+				</div>
+				<div class="footerR">
+					<p>888-888-8888</p>
+					<p>周一至周日 (9:00-21:00)</p>
+					<span>客户服务热线</span>
+				</div>
+			</section>
+		</div>
+		<!--end底部-->
+
+		<script type="text/javascript">
+				//获取元素列表 数组
+		var navClickArr= document.getElementsByClassName('navClick');
+		//获取a标签数组
+		var  aChaClrA = document.getElementsByClassName('aChaClr');
+		//入口函数
+		onload = function (){
+			
+			//统一将底线设为无
+			setStyle(navClickArr,function(arr){
+				arr.style.borderBottom = "none";
+				
+			});
+			setStyle(aChaClrA,function(arr){
+				arr.style.color = "black";
+			});
+			
+			
+			
+		//将自身底线设为红色
+			navClickArr[1].style.borderBottom = "3px solid #F42547";
+			aChaClrA[1].style.color = "#F42547";
+			
+		}
+
+
+		//循环体
+		function setStyle(arr,fn){
+			for(var i = 0;i < arr.length;i++){
+				fn(arr[i]);
+			}
+		}
+		
+		
+		var cont = 0;
+		function mouseScroll(e){
+			
+			console.log(e);
+			console.log(cont);
+			var nav = document.getElementsByClassName('header');
+			nav[0].style.backgroundColor = '#FFFFFF';
+			if(e.deltaY > 0){
+				cont += 1;		
+				
+			}else {
+				cont = cont <= 0 ? 0 : cont - 1;
+			}
+			if(cont <= 0){
+				nav[0].style.backgroundColor = 'transparent';
+			}
+					
+		}
+			
+		</script>
+	</body>
+</html>

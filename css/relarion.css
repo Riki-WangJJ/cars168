@@ -1,0 +1,51 @@
+@charset "utf-8";
+
+
+
+/*start 大图*/
+.banner {
+	width: 100%;
+	height: 620px;
+}
+
+.banner img {
+	width: 100%;
+	height: 100%;
+}
+
+/*end 大图*/
+
+/*start 地址*/
+.address {
+	width: 100%;
+	height: 300px;
+	padding: 58px 210px 0 210px;
+}
+.address div h3 {
+	font-weight: normal;
+	margin-bottom: 30px;
+}
+.address div h3:hover{
+	color: #1b4e75;
+}
+.address div p {
+	font-size: 12px;
+	color: #869587;
+	margin: 15px 0;
+}
+
+.address div:first-child {
+	float: left;
+}
+
+.address div:nth-child(2){
+	float: right;
+}
+.address div:nth-child(3){
+	float: right;
+	width: 1px;
+	height: 160px;
+	background: #8698b7;
+	margin-right: 100px;
+}
+/*end 地址*/

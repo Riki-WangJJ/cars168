@@ -1,0 +1,271 @@
+@charset "utf-8";
+/*轮播 start*/
+.banner {
+	width: 100%;
+	height: 680px;
+	background: url(../img/index/img_back.png) no-repeat center;
+	background-size: cover;
+	position: relative;
+}
+.banner .bannerL{
+	position: absolute;
+	left: 15%;
+	top: 30%;
+	width: 400px;
+}
+.banner .bannerL h3 {
+	text-align: center;
+	margin-bottom: 20px;
+}
+.banner .bannerL p {
+	line-height: 30px;
+}
+.banner .bannerL div {
+	height: 55px;
+	position: relative;
+}
+.banner .bannerL div a:first-child{
+	display: inline-block;
+	width: 151px;
+	height: 55px;
+	margin: 0 5px 0 5px;
+	background: url(../img/index/download_iphone.png);
+}
+.banner .bannerL div a:nth-child(2){
+	display: inline-block;
+	width: 151px;
+	height: 55px;
+	margin: 0 5px 0 5px;
+	background:url(../img/index/download_android.png);
+}
+.banner .bannerL div a:last-child{
+	display: inline-block;
+	width: 55px;
+	height: 55px;
+	background: url(../img/index/code_lit.png);
+}
+.banner .bannerL div a:last-child em {
+	position: absolute;
+	right: 20px;
+	bottom: -206px;
+	width: 172px;
+	height: 201px;
+	background: url(../img/index/code_big.png);
+	display: none;
+}
+.banner .bannerL div a:last-child:hover em {
+	display: block;
+}
+.banner .bannerR {
+	position: absolute;
+	right: 15%;
+	bottom: -60px;
+	width: 443px;
+	height: 589px;
+	background: url(../img/index/img_phones.png) no-repeat center;
+}
+
+/*轮播 end*/
+
+/*购车流程 start*/
+.bayflow {
+	width: 100%;
+	height: 420px;
+	background: #FFFFFF;
+	padding-top: 29px;
+}
+.bayflow ul {
+	margin: 0 6% ;
+	display: flex;
+	padding: 100px 100px 80px 100px;
+	border-bottom: 1px solid #f0f0f0;
+}
+.bayflow ul li {
+	flex: 1;
+	text-align: center;
+}
+.bayflow ul li:nth-child(2n-1) em{
+	display: block;
+	margin: 0 auto;
+	width: 106px;
+	height: 106px;
+}
+.bayflow ul li:first-child em{
+	background: url(../img/icon/icon_01.png) no-repeat center;
+}
+.bayflow ul li:first-child em:hover{
+	background: url(../img/icon/icon_01_red.png) no-repeat center;
+}
+.bayflow ul li:nth-child(3) em{
+	background: url(../img/icon/icon_02.png) no-repeat center;
+}
+.bayflow ul li:nth-child(3) em:hover{
+	background: url(../img/icon/icon_02_red.png) no-repeat center;
+}
+.bayflow ul li:nth-child(5) em{
+	background: url(../img/icon/icon_03.png) no-repeat center;
+}
+.bayflow ul li:nth-child(5) em:hover{
+	background: url(../img/icon/icon_03_red.png) no-repeat center;
+}
+.bayflow ul li:nth-child(7) em{
+	background: url(../img/icon/icon_04.png) no-repeat center;
+}
+.bayflow ul li:nth-child(7) em:hover{
+	background: url(../img/icon/icon_04_red.png) no-repeat center;
+}
+
+.bayflow ul li:nth-child(2n-1) h4 {
+	margin: 30px 0 15px 0;
+}
+.bayflow ul li:nth-child(2n-1) p{
+	font-size: 14px;
+	color: #666;
+}
+.bayflow ul li:nth-child(2n){
+	margin-top: 50px;
+	height: 2px;
+	border: 1px solid #f0f0f0;
+}
+/*购车流程 end*/
+
+/*公共 section 板块*/
+ .public_section{
+	height: 810px;
+	width: 100%;
+	padding: 0 222px;
+	/*background: pink;*/
+}
+.public_section h3 {
+	height: 111px;
+	text-align: center;
+	line-height: 111px;
+	font-size: 2.2em;
+	font-weight: normal;
+}
+.public_section div {
+	margin: 0 auto;
+	width: 324px;
+	height: 576px;
+	position: relative;
+	perspective: 1000px;
+}
+.public_section div img{
+	position: absolute;
+	top: 0;
+	left: 0;
+	cursor: pointer;
+	transition: all 1s;
+}
+.public_section div img:first-child{
+	transform:translateZ(-100px);
+}
+.public_section div img:nth-child(2){
+	transform: translateX(250px) rotateY(-40deg) translateZ(-100px);
+	/*transform-origin: right;*/
+}
+.public_section div img:nth-child(3){
+	transform: translateX(-250px) rotateY(40deg) translateZ(-100px);
+	/*transform-origin: left;*/
+}
+.public_section nav{
+	width: 75px;
+	margin: 0 auto;
+}
+.public_section nav span{
+	display: inline-block;
+	width: 24px;
+	height: 24px;
+}
+.public_section nav span:first-child {
+	background: url(../img/go_left.png) no-repeat center;
+	margin-right: 20px;
+}
+.public_section nav span:first-child:hover {
+	background: url(../img/go_left_red.png) no-repeat center;
+}
+.public_section nav span:last-child {
+	background: url(../img/go_right.png) no-repeat center;
+}
+.public_section nav span:last-child:hover {
+	background: url(../img/go_right_red.png) no-repeat center;
+}
+.public_section p {
+	margin-top: 20px;
+	text-align: center;
+	font-size: 14px;
+	color: #666666;
+}
+/*公共 section 板块*/
+
+/*start买车无忧*/
+.easebay {
+	width: 100%;
+	height: 810px;
+	background: #FFFFFF;
+}
+/*end 买车无忧*/
+
+/*start精准车源查找*/
+.chosecar {
+	width: 100%;
+	height: 810px;
+	background: #F8F8F8;
+}
+/*end精准车源查找*/
+
+/*start发布车源和求购*/
+.releasecar {
+	width: 100%;
+	height: 810px;
+	background: #FFFFFF;
+}
+/*end发布车源和求购*/
+
+/*start车友畅聊工具*/
+.chat {
+	width: 100%;
+	height: 810px;
+	background: #F8F8F8;
+}
+/*end车友畅聊工具*/
+
+/*start增值代办临牌服务*/
+.plate {
+	width: 100%;
+	height: 810px;
+	background: #FFFFFF;	
+}
+/*end增值代办临牌服务*/
+
+/*start邀请注册送好礼*/
+.invite {
+	width: 100%;
+	height: 810px;
+	background: #F8F8F8;
+}
+/*start邀请注册送好礼*/
+
+/*start分享模块*/
+.share {
+	width: 100%;
+	height: 275px;
+	background: #FFFFFF;
+}
+.share ul {
+	margin: 0 6%;
+	display: flex;
+	padding: 30px 100px 0 100px;
+}
+.share ul li {
+	flex: 1;
+	text-align: center;
+}
+.share ul li h4{
+	margin: 10px 0;
+}
+.share ul li p {
+	color: #848484;
+	font-size: 14px;
+}
+/*end分享模块*/

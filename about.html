@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>车源通&nbsp;车好卖&nbsp;买好车&nbsp;就上车源通</title>
+		<link rel="shortcut icon" href="title-icon.ico"/>
+		<link rel="stylesheet" type="text/css" href="css/public.css"/>
+		<link rel="stylesheet" href="css/about.css" />
+	</head>
+	<body onmousewheel="mouseScroll()">
+		<!--顶部导航-->
+		<div class="header">
+			<h1 class="logo">车源通</h1>
+			<ul>
+				<li class="navClick"><a class="aChaClr" href="index.html">首页</a></li>
+				<li class="navClick"><a class="aChaClr" href="product.html">产品动态</a></li>
+				<li class="navClick"><a class="aChaClr" href="about.html">关于我们</a></li>
+				<li class="navClick"><a class="aChaClr" href="welcome.html">人才招聘</a></li>
+				<li class="navClick"><a class="aChaClr" href="relation.html">联系我们</a></li>
+			</ul>
+		</div>
+		<!--顶部导航 end-->
+		
+		<!--start大背景图-->
+		<div class="banner">
+			<i></i>
+		</div>
+		<!--end大背景图-->
+		
+		<!--start介绍-->
+		<div class="recommend">
+			<p>车源通——隶属于青岛哈里森网络科技公司旗下，是哈里森公司自主研发的线上汽车服务平台项目，致力于打造线上一流的汽车服务平台，为汽车行业带来新的领域！是一款集报价、需求、聊天、分享等一体的便捷、实用的APP软件，更是时尚购车的开端！</p>
+		</div>
+		<!--end介绍-->
+		
+		<!--start服务保障-->
+		<div class="safeguard">
+			<h3>服务保障</h3>
+			<i></i>
+			<ul>
+				<li>
+					<div></div>
+					<img src="img/aboutus/icon_01.png"/>
+					<h4>大数据</h4>
+					<p>最强大精准定位，覆盖全流程<br />发布、推广<br />互动、效果评估...</p>
+				</li>
+				<li>
+					<div></div>
+					<img src="img/aboutus/icon_02.png"/>
+					<h4>团队合作</h4>
+					<p>团队成就辉煌<br />个性鲜明，各自发挥自己的才华<br />相互结合，共同进步</p>
+				</li>
+				<li>
+					<div></div>
+					<img src="img/aboutus/icon_03.png"/>
+					<h4>诚信致胜</h4>
+					<p>在我们的价值观的塑造中<br />“诚”是公司聚心之魂<br />“信”是公司立足之本</p>
+				</li>
+				<li>
+					<div></div>
+					<img src="img/aboutus/icon_04.png"/>
+					<h4>功能开发</h4>
+					<p>资深工程师开发项目<br />丰富的成功项目开发经验</p>
+				</li>
+				<li>
+					<div></div>
+					<img src="img/aboutus/icon_05.png"/>
+					<h4>测试上线</h4>
+					<p>严格把关上线产品质量<br />专业测试工程师测试项目</p>
+				</li>
+				<li>
+					<div></div>
+					<img src="img/aboutus/icon_06.png"/>
+					<h4>跟踪客服</h4>
+					<p>一对一的客服跟踪服务<br />专业知识强化培训<br />提供永久免费的基础服务支持</p>
+				</li>
+			</ul>
+		</div>
+		<!--end服务保障-->
+		
+		<!--start底部-->
+		<div class="footer">
+			<section>
+				<div class="footerL">
+					<ul>
+						<li><a href="index.html">首页</a></li>
+						<li><a href="about.html">关于我们</a></li>
+						<li><a href="product.html">产品动态</a></li>
+						<li><a href="welcome.html">人才招聘</a></li>
+						<li><a href="relation.html">联系我们</a></li>
+						
+					</ul>
+					<p>Copyright &copy; 2014～ 2017 青岛哈里森网络科技有限公司 版权所有  鲁 ICP备  14036831 号 -1</p>
+				</div>
+				<div class="footerC">
+					<img src="img/icon/icon_code.png"/>
+					<p>扫一扫关注我们</p>
+				</div>
+				<div class="footerR">
+					<p>888-888-8888</p>
+					<p>周一至周日 (9:00-21:00)</p>
+					<span>客户服务热线</span>
+				</div>
+			</section>
+		</div>
+		<!--end底部-->
+		<script type="text/javascript">
+			//获取元素列表 数组
+		var navClickArr= document.getElementsByClassName('navClick');
+		//获取a标签数组
+		var  aChaClrA = document.getElementsByClassName('aChaClr');
+		//入口函数
+		onload = function (){
+			
+			//统一将底线设为无
+			setStyle(navClickArr,function(arr){
+				arr.style.borderBottom = "none";
+				
+			});
+			setStyle(aChaClrA,function(arr){
+				arr.style.color = "black";
+			});
+			
+			
+			
+		//将自身底线设为红色
+			navClickArr[2].style.borderBottom = "3px solid #F42547";
+			aChaClrA[2].style.color = "#F42547";
+			
+		}
+
+
+		//循环体
+		function setStyle(arr,fn){
+			for(var i = 0;i < arr.length;i++){
+				fn(arr[i]);
+			}
+		}
+		
+		
+		
+		
+		
+		var cont = 0;
+		function mouseScroll(e){
+			
+			console.log(e);
+			console.log(cont);
+			var nav = document.getElementsByClassName('header');
+			nav[0].style.backgroundColor = '#FFFFFF';
+			if(e.deltaY > 0){
+				cont += 1;		
+				
+			}else {
+				cont = cont <= 0 ? 0 : cont - 1;
+			}
+			if(cont <= 0){
+				nav[0].style.backgroundColor = 'transparent';
+			}
+					
+		}
+		
+		</script>
+	</body>
+</html>

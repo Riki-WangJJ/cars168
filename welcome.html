@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>车源通&nbsp;车好卖&nbsp;买好车&nbsp;就上车源通</title>
+		<link rel="shortcut icon" href="title-icon.ico"/>
+		<link rel="stylesheet" type="text/css" href="css/public.css"/>
+		<link rel="stylesheet" type="text/css" href="css/welcome.css"/>
+	</head>
+	<body onmousewheel="mouseScroll(event)">
+		<!--顶部导航-->
+		<div class="header">
+			<h1 class="logo">车源通</h1>
+			<ul>
+				<li class="navClick"><a class="aChaClr" href="index.html">首页</a></li>
+				<li class="navClick"><a class="aChaClr" href="product.html">产品动态</a></li>
+				<li class="navClick"><a class="aChaClr" href="about.html">关于我们</a></li>
+				<li class="navClick"><a class="aChaClr" href="welcome.html">人才招聘</a></li>
+				<li class="navClick"><a class="aChaClr" href="relation.html">联系我们</a></li>
+			</ul>
+		</div>
+		<!--顶部导航 end-->
+		
+		
+		<!--start 大图-->
+		<div class="banner">
+			<img src="img/welcome/welcome_bg.png"/>
+		</div>
+			
+		<!--end 大图-->
+		
+		<!--start 发展空间-->
+		<div class="developSpace">
+			<div>
+				<em></em>
+				<p>晋级</p>
+				<p>提供特别晋级通道，让每一颗金子在这都能够发光、发热。</p>
+			</div>
+			<div>
+				<em></em>
+				<p>团队</p>
+				<p>成就团队辉煌，助您人生成长！</p>
+			</div>
+			<div>
+				<em></em>
+				<p>高薪</p>
+				<p>绝对超出同行业薪水标准，让你的职业生涯再攀高峰。</p>
+			</div>
+			<div>
+				<em></em>
+				<p>公平</p>
+				<p>公司提供公平的竞争平台、公平的嘉奖平台，让每一份汗水的付出都是值得的。</p>
+			</div>	
+		</div>
+		
+		<!--end 发展空间-->
+		
+		<!--start 加入点击 -->
+		<div class="jionClick">
+			<h3>欢迎加入我们!</h3>
+			<a href="relation.html"><img src="img/welcome/center.png"/></a>
+		</div>
+		
+		<!--end 加入点击-->
+		
+		<!--start底部-->
+		<div class="footer">
+			<section>
+				<div class="footerL">
+					<ul>
+						<li><a href="index.html">首页</a></li>
+						<li><a href="about.html">关于我们</a></li>
+						<li><a href="product.html">产品动态</a></li>
+						<li><a href="welcome.html">人才招聘</a></li>
+						<li><a href="relation.html">联系我们</a></li>
+						
+					</ul>
+					<p>Copyright &copy; 2014～ 2017 青岛哈里森网络科技有限公司 版权所有  鲁 ICP备  14036831 号 -1</p>
+				</div>
+				<div class="footerC">
+					<img src="img/icon/icon_code.png"/>
+					<p>扫一扫关注我们</p>
+				</div>
+				<div class="footerR">
+					<p>888-888-8888</p>
+					<p>周一至周日 (9:00-21:00)</p>
+					<span>客户服务热线</span>
+				</div>
+			</section>
+		</div>
+		<!--end底部-->
+		
+		<script type="text/javascript">
+				//获取元素列表 数组
+		var navClickArr= document.getElementsByClassName('navClick');
+		//获取a标签数组
+		var  aChaClrA = document.getElementsByClassName('aChaClr');
+		//入口函数
+		onload = function (){
+			
+			//统一将底线设为无
+			setStyle(navClickArr,function(arr){
+				arr.style.borderBottom = "none";
+				
+			});
+			setStyle(aChaClrA,function(arr){
+				arr.style.color = "black";
+			});
+			
+			
+			
+		//将自身底线设为红色
+			navClickArr[3].style.borderBottom = "3px solid #F42547";
+			aChaClrA[3].style.color = "#F42547";
+			
+		}
+
+
+		//循环体
+		function setStyle(arr,fn){
+			for(var i = 0;i < arr.length;i++){
+				fn(arr[i]);
+			}
+		}
+		
+		
+		
+		
+		
+		var cont = 0;
+		function mouseScroll(e){
+			
+			console.log(e);
+			console.log(cont);
+			var nav = document.getElementsByClassName('header');
+			nav[0].style.backgroundColor = '#FFFFFF';
+			if(e.deltaY > 0){
+				cont += 1;		
+				
+			}else {
+				cont = cont <= 0 ? 0 : cont - 1;
+			}
+			if(cont <= 0){
+				nav[0].style.backgroundColor = 'transparent';
+			}
+					
+		}
+		
+		</script>
+	</body>
+</html>

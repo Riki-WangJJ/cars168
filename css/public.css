@@ -1,0 +1,146 @@
+@charset "utf-8";
+*,*:before,*:after{
+	box-sizing:border-box;
+	margin: 0px;
+	padding: 0px;
+}
+ul {
+	list-style: none;
+}
+a {
+	text-decoration: none;
+}
+body{
+	font-family: "微软雅黑",Verdana,Geneva,Arial,sans-serif;
+	background-color: #fff;
+	min-width: 1300px;
+}
+.clearfix:after {
+	content: ".";
+	height: 0;
+	display: block;
+	clear: both;
+	visibility: hidden;
+}
+.clearfix {
+	zoom: 1;
+}
+
+/*顶部导航*/
+.header {
+	width: 100%;
+	min-width: 800px;
+	position: fixed;
+	z-index: 200;
+	height: 68px;
+	line-height: 68px;
+	background: transparent;
+}
+.header h1 {
+	position: absolute;
+	top: 0;
+	left: 5%;
+	width: 145px;
+	background: url(../img/index/logo.png) no-repeat left center;
+	text-indent: -3000px;
+}
+.header ul {
+	position: absolute;
+	top: 0;
+	right: 5%;	
+}
+.header ul li {
+	display: inline-block;
+	height: 58px;
+}
+.header ul li:first-child {
+	padding: 0 8px;
+	color: #F42547;
+	border-bottom: 3px solid #F42547;
+}
+.header ul li:first-child a {
+	color: #F42547 ;
+}
+
+.header ul li+li{
+	margin-left: 20px;
+}
+.header ul li a{
+	color: #2f383d;
+}
+.header ul li:hover{
+	border-bottom: 3px solid #F42547 !important;
+}
+.header ul li:hover a{
+	color: #F42547 !important;
+}
+
+/*顶部导航 end*/
+
+/*start底部*/
+.footer {
+	width: 100%;
+	height: 175px;
+	background: #333333;
+}
+.footer section {
+	margin: 0 6%;
+	display: flex;
+	padding: 40px 100px 0 100px;
+	display: flex;
+}
+.footerL {
+	flex: 3;
+	color: #FFFFFF;
+}
+.footerL p {
+	font-size: 12px;
+	margin-top: 32px;
+}
+.footerL ul {
+	width: 100%;
+	height: 30px;
+	display: flex;
+	flex-direction: row;
+}
+.footerL ul li {
+	flex: 1;
+	display: inline-block;
+}
+.footerL ul li+li{
+	/*margin-left: 100px;*/
+}
+.footerL ul li a {
+	color: #FFFFFF;
+}
+
+.footerC {
+	flex: 1;
+	height: 100px;
+	text-align: center;
+	color: #FFFFFF;
+	border-left: 1px solid #7c7c7c;
+	border-right: 1px solid #7c7c7c;
+}
+.footerC img{
+	width: 86px;
+	height: 86px
+}
+.footerR {
+	flex: 1;
+	color: #FFFFFF;
+	text-align: center;
+}
+.footerR p {
+	margin-bottom: 15px;
+}
+.footerR span {
+	display: inline-block;
+	width: 140px;
+	height: 30px;
+	line-height: 30px;
+	background: #f00027;
+	cursor: pointer;
+}
+
+/*end底部*/
